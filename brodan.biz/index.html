@@ -7,7 +7,7 @@
   <meta name="description" content="The personal website of Christopher 'Brodan' Hranj.">
   <title>Brodan.biz - Personal Site of Chris Hranj</title>
 
-  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 
@@ -31,11 +31,9 @@
         border-radius: 0;
         background-color: #04D294;
         margin-bottom: 0;
-        padding: 1rem 1rem;
       }
       .container-fluid {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: 5rem 0rem;
       }
       h1, h2 {
         color: #FCFAFC;
@@ -62,6 +60,11 @@
       }
       a:focus {
         color: #FCFAFC;
+      }
+      .experience a {
+        font-weight: normal;
+        text-decoration: underline;
+        color: #fff;
       }
       .btn-primary {
         background-color: #FF5C05;
@@ -92,7 +95,7 @@
       }
       .vertical-center {
         min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-        min-height: 100vh; /* These two lines are counted as one :-)       */
+        height: 500px;
         display: flex;
         align-items: center;
       }
@@ -107,13 +110,16 @@
       .pingrove a{
         color: #FCFAFC;
       }
+      hr {
+        margin: 5rem 0rem;
+      }
     </style>
 </head>
 
 <body>
     <div class="jumbotron">
       <div class="container vertical-center">
-            <img src="/static/images/logo.png" class="img-fluid">
+            <img src="static/images/logo.png" class="img-fluid" style="margin: auto;">
       </div>
     </div>
 
@@ -121,24 +127,26 @@
       <div class="container">
         <div class="row vert">
           <div class="col-md-4 ">
-            <img class="img-fluid hidden-sm-down" src="/static/images/brodan.png">
+            <img class="img-fluid hidden-sm-down" src="static/images/brodan.png">
           </div>
           <div class="col-md-8 ">
             <h1>About</h1>
             <p class="lead">
               <span class="spanner">Hey, I'm Chris.</span> 
               Most people call me <span class="spanner">Brodan</span>. 
-              I graduated from TCNJ with a Bachelor's in Computer Science. I am passionate about software development and love working with backend services, APIs, and IoT devices. I'm also a musician, gamer, Ultimate player, and Simpsons fanatic.
+              I am passionate about software development and love working with backend services, APIs, and IoT devices. I've interned at Twilio and BuzzFeed, and am currently working as a software engineer at Truveris. 
+
+              I graduated from TCNJ with a BS in Computer Science. I'm also a musician, gamer, Ultimate player, and Simpsons fanatic. 
             </p>
             <div class="row vert">
               <div class="col-md-6" style="margin-top:2rem;">
                 <p>
-                  <a class="btn btn-primary btn-lg" href="/static/files/resume.pdf" role="button" target="_blank">View Resume &raquo;</a>
+                  <a class="btn btn-primary btn-lg" href="static/files/resume.pdf" role="button" target="_blank">Download Resume &raquo;</a>
                 </p>
               </div>
               <div class="col-md-6" style="margin-top:2rem;">
                 <p>
-                  <a class="btn btn-primary btn-lg" href="/blog" role="button" target="_blank">View Blog &raquo;</a>
+                  <a class="btn btn-primary btn-lg" href="/blog" role="button" target="_blank"> Blog &raquo;</a>
                 </p>
               </div>
             </div>
@@ -147,7 +155,7 @@
       </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #FF5C05;">
+    <div class="container-fluid experience" style="background-color: #FF5C05;">
       <div class="container">
         <h1 style="text-align: center; margin-bottom: 0;">Work Experience</h1>
         <div class="row" style="padding-top: 20px; text-align: center;">
@@ -179,7 +187,7 @@
             <p>In my spare time I run a pin and goods company called Pingrove Press alongside designer <a href="www.matza.design">Michael Matza</a>. Pingrove Press was started in January of 2017 out of my home in Central NJ. Keep an eye on our store at <a href="http://pingrove.press">pingrove.press</a> for new and limited releases and follow us on <a href="https://www.instagram.com/pingrovepress/">Instagram</a>!
           </div>
           <div class="col-md-4">
-            <img style="max-width: 80%;" class="img-fluid hidden-sm-down" src="/static/images/PINGROVEPRESSFINAL.png">
+            <img style="max-width: 80%;" class="img-fluid hidden-sm-down" src="static/images/PINGROVEPRESSFINAL.png">
          </div>
         </div>
       </div>
@@ -253,7 +261,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
     <a href="https://github.com/brodan/brodan.biz">
-      <img style="position: absolute; top: 0; right: 0; border: 0; width: 20%;" src="/static/images/github_banner.png" alt="Fork me on GitHub"
+      <img style="position: absolute; top: 0; right: 0; border: 0; width: 20%;" src="static/images/github_banner.png" alt="Fork me on GitHub"
     </a>
   </body>
 </html>
