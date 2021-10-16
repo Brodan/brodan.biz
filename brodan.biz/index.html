@@ -21,6 +21,17 @@
         font-style: normal;
         font-stretch: normal;
       }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
       .bg-inverse {
         background-color: #273043 !important;
       }
@@ -31,6 +42,9 @@
         border-radius: 0;
         background-color: #04D294;
         margin-bottom: 0;
+        background: linear-gradient(-45deg, #146DD1, #04D294, #FF9C05, #FF5C05);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
       }
       .container-fluid {
         padding: 5rem 0rem;
@@ -159,7 +173,7 @@
         <div class="row" style="padding-top: 20px; text-align: center;">
           <div class="col-md-6">
             <h2>GIPHY</h2>
-            <p>I'm currently a Software Engineer at <a href="https://giphy.com/">Giphy</a> in New York City. We recently got <a href="https://medium.com/@giphy/giphy-to-join-facebook-as-part-of-the-instagram-team-e7ea8d32d7b6">acquried by Facebook</a> and we are joining the Instagram team! I've been mostly helping build out our Ad Products platform using Django and React.</p>
+            <p>I'm currently a Software Engineer at <a href="https://giphy.com/">Giphy</a> in New York City. We recently got <a href="https://medium.com/@giphy/giphy-to-join-facebook-as-part-of-the-instagram-team-e7ea8d32d7b6">acquried by Facebook</a> and will eventually join the Instagram team! I started at GIPHY by helping build out our Ad Products platform using Django and React. Lately I've been working on some GIF/Video segmentation tools.</p>
           </div>
           <div class="col-md-6">
             <h2>TRUVERIS</h2>
@@ -225,7 +239,6 @@
             <ul class="list-unstyled">
               <li><a href="https://www.youtube.com/user/zuuku/">YouTube</a></li>
               <li><a href="http://will-smith.bandcamp.com/">The Fresh Men</a></li>
-              <li><a href="http://savefaceband.com/">Save Face</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6">
