@@ -1,294 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The personal website of Christopher 'Brodan' Hranj.">
-  <title>Brodan.biz - Personal Site of Chris Hranj</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The personal website of Christopher 'Brodan' Hranj.">
+    <title>Brodan.biz - Personal Site of Chris Hranj</title>
 
-  <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
     <style type="text/css">
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
+      body {
+        background-color: #231f20;
       }
-      .bg-inverse {
-        background-color: #273043 !important;
+      footer {
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+      footer a {
+        color: #D6DF53;
+      }
+      footer a:visited {
+        color: #86C9C3;
+      }
+      footer a:hover {
+        color: #FFFFFF;
+      }
+      #work-experience a {
+        color: #D6DF53;
+      }
+      #work-experience a:hover {
+        color: #FFFFFF;
+      }
+      #pingrove-press a {
+        color: #231f20;
+      }
+      #pingrove-press a:hover {
+        color: #DB151F;
       }
       .navbar {
         border-radius: 0;
       }
       .jumbotron {
         border-radius: 0;
-        background-color: #04D294;
+        background-color: #86C9C3;
         margin-bottom: 0;
-        background: linear-gradient(-45deg, #146DD1, #04D294, #FF9C05, #FF5C05);
         background-size: 400% 400%;
         animation: gradient 5s ease infinite;
       }
-      .container-fluid {
-        padding: 5rem 0rem;
+      #about-me-buttons {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
       }
-      h1, h2 {
-        color: #FCFAFC;
+      .container-fluid {
+        padding: 3rem 0rem;
+      }
+      h1, h2, h3 {
+        color: #FFFFFF;
         font-family: "Pixelify Sans", sans-serif;
         font-weight: normal;
         font-style: normal;
       }
       hr {
-        background-color: #FCFAFC;
-        margin: 3rem 0rem;
+        color: #FFFFFF;
+        opacity: 100%;
       }
       p {
-        color: #FCFAFC;
+        color: #FFFFFF;
       }
-
       a {
-        color: #064284;
         font-weight: bold;
-      }
-      a:hover {
-        color: #FCFAFC;
-      }
-      a:active {
-        color: #FCFAFC;
-      }
-      a:focus {
-        color: #FCFAFC;
-      }
-      .experience a {
-        font-weight: normal;
-        text-decoration: underline;
-        color: #fff;
       }
       .btn-primary {
-        background-color: #FF5C05;
+        background-color: #00665F;
+        border-color: #00665F;
         font-weight: bold;
-        color: #FCFAFC;
-        border-color: #FF5C05;
+        color: #FFFFFF;
       }
       .btn-primary:hover {
-        background-color: #04D294;
-        border-color: #04D294;
+        background-color: #DB151F;
+        border-color: #DB151F;
+        color: #FFFFFF;
       }
-      .btn-primary:active {
-        background-color: #064284;
-        border-color: #064284;
-        box-shadow: none;
+      .btn-primary:first-child:active {
+        background-color: #D6DF53;
+        border-color: #D6DF53;
+        color: #231f20;
       }
       .btn-primary:focus {
-        background-color: #064284;
-        border-color: #064284;
+        background-color: #DB151F;
+        border-color: #DB151F;
         box-shadow: none;
       }
       .list-header {
+        font-size: 150%;
+        font-family: "Pixelify Sans", sans-serif;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      .footer-list {
+        white-space: nowrap;
+        padding-left: 0;
+        list-style-type: none;
+      }
+      .spanner-dark {
+        color: #D6DF53;
         font-weight: bold;
-      }
-      .spanner {
-        color: #FF5C05;
-        font-weight: bold;
-      }
-      .vertical-center {
-        height: 500px;
-        display: flex;
-        align-items: center;
-      }
-      img {
-        max-height: 100%;
       }
       .vert {
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .pingrove a{
-        color: #FCFAFC;
+      .transition-svg {
+        vertical-align: top;
+        width: 100%;
+      }
+      #tcnj-link {
+        color: #D6DF53;
+      }
+      #tcnj-link:hover {
+        color: #FFFFFF;
       }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="jumbotron">
-      <div class="container vertical-center">
-            <img src="static/images/logo.png" class="img-fluid" style="margin: auto;">
+      <div class="container-fluid">
+        <div class="row justify-content-md-center px-4">
+          <img src="static/images/logo.png" class="img-fluid mx-auto d-block" style="max-width: 800px;" alt="Large pixelated Brodan logo">
+        </div>
       </div>
     </div>
-
-    <div class="container-fluid" style="background-color: #146DD1;">
+    <!-- About -->
+    <svg class="transition-svg" viewBox="0 0 3000 500" width="3000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 31L600 31L600 96L1200 96L1200 46L1800 46L1800 61L2400 61L2400 16L3000 16L3000 56L3000 0L3000 0L2400 0L2400 0L1800 0L1800 0L1200 0L1200 0L600 0L600 0L0 0Z" fill="#86c9c3"></path><path d="M0 106L600 106L600 171L1200 171L1200 131L1800 131L1800 156L2400 156L2400 41L3000 41L3000 91L3000 54L3000 14L2400 14L2400 59L1800 59L1800 44L1200 44L1200 94L600 94L600 29L0 29Z" fill="#6b98aa"></path><path d="M0 156L600 156L600 271L1200 271L1200 176L1800 176L1800 346L2400 346L2400 311L3000 311L3000 141L3000 89L3000 39L2400 39L2400 154L1800 154L1800 129L1200 129L1200 169L600 169L600 104L0 104Z" fill="#5f697d"></path><path d="M0 331L600 331L600 421L1200 421L1200 466L1800 466L1800 386L2400 386L2400 386L3000 386L3000 406L3000 139L3000 309L2400 309L2400 344L1800 344L1800 174L1200 174L1200 269L600 269L600 154L0 154Z" fill="#48404a"></path><path d="M0 501L600 501L600 501L1200 501L1200 501L1800 501L1800 501L2400 501L2400 501L3000 501L3000 501L3000 404L3000 384L2400 384L2400 384L1800 384L1800 464L1200 464L1200 419L600 419L600 329L0 329Z" fill="#231f20"></path></svg>
+    <div class="container-fluid" style="background-color: #231f20;">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 ">
-            <img class="img-fluid hidden-sm-down" src="static/images/brodan.png">
+        <div class="row align-items-center gy-5">
+          <div class="col-md-12 col-lg-4 text-center d-none d-md-block">
+            <img style="height: 350px;" src="static/images/brodan.png" alt="Pixelated avatar of Brodan">
           </div>
-          <div class="col-md-8 ">
-            <h1>About</h1>
+          <div class="col-md-12 col-lg-8">
+            <h1>About Me</h1>
             <p class="lead">
-              <span class="spanner">Hey, I'm Chris.</span>
-              Most people call me <span class="spanner">Brodan</span>.
+              <span class="spanner-dark">Hey, I'm Chris.</span>
+              Most people call me <span class="spanner-dark">Brodan</span>.
               I'm a full-stack software developer with a passion for Python, micro-services, APIs, NFTs, and more.
-              I graduated from <a target="_blank" rel="noopener" style="color: #04D294" href="https://tcnj.edu/">TCNJ</a> with a BS in Computer Science. I'm also a musician, Ultimate player, gamer, and '90s Simpsons expert.
+              I graduated from <a id="tcnj-link" target="_blank" rel="noopener" href="https://tcnj.edu/" aria-label="TCNJ University website">TCNJ</a> with a BS in Computer Science. I'm also a musician, Ultimate player, gamer, and '90s Simpsons expert.
             </p>
-            <div class="row">
-              <div class="col-lg-6" style="margin-top:2rem;">
-                <p>
-                  <a class="btn btn-primary btn-lg" href="static/files/resume.pdf" role="button" target="_blank">Download Resume &raquo;</a>
-                </p>
+            <div class="row gy-3 text-center" id="about-me-buttons">
+              <div class="col-lg-6">
+                <a class="btn btn-primary btn-lg" style="min-width: 70%;" href="static/files/resume.pdf" role="button" target="_blank" aria-label="My resume">Download Resume &raquo;</a>
               </div>
-              <div class="col-lg-6" style="margin-top:2rem;">
-                <p>
-                  <a class="btn btn-primary btn-lg" href="/blog" role="button" target="_blank"> Blog &raquo;</a>
-                </p>
+              <div class="col-lg-6">
+                <a class="btn btn-primary btn-lg" style="min-width: 70%;" href="/blog" role="button" target="_blank" aria-label="Brodan.biz blog"> Blog &raquo;</a>
               </div>
             </div>
-            <br>
             <p class="lead">
-              <span class="spanner">I'm always looking to work on cool stuff!</span><br>
+              <span class="spanner-dark">I'm always looking to work on cool stuff!</span><br>
               I love to build and create outside of my normal 9-5 job. Reach out if you've got a cool project in mind that you'd like to collaborate on.
             </p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container-fluid experience" style="background-color: #FF5C05;">
+    <!-- Work Experience -->
+    <svg class="transition-svg" viewBox="0 0 3000 500" width="3000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 171L333 171L333 166L667 166L667 146L1000 146L1000 116L1333 116L1333 181L1667 181L1667 116L2000 116L2000 131L2333 131L2333 166L2667 166L2667 191L3000 191L3000 181L3000 0L3000 0L2667 0L2667 0L2333 0L2333 0L2000 0L2000 0L1667 0L1667 0L1333 0L1333 0L1000 0L1000 0L667 0L667 0L333 0L333 0L0 0Z" fill="#231f20"></path><path d="M0 246L333 246L333 276L667 276L667 261L1000 261L1000 246L1333 246L1333 271L1667 271L1667 216L2000 216L2000 221L2333 221L2333 246L2667 246L2667 276L3000 276L3000 291L3000 179L3000 189L2667 189L2667 164L2333 164L2333 129L2000 129L2000 114L1667 114L1667 179L1333 179L1333 114L1000 114L1000 144L667 144L667 164L333 164L333 169L0 169Z" fill="#35303f"></path><path d="M0 436L333 436L333 401L667 401L667 436L1000 436L1000 421L1333 421L1333 406L1667 406L1667 416L2000 416L2000 426L2333 426L2333 406L2667 406L2667 411L3000 411L3000 416L3000 289L3000 274L2667 274L2667 244L2333 244L2333 219L2000 219L2000 214L1667 214L1667 269L1333 269L1333 244L1000 244L1000 259L667 259L667 274L333 274L333 244L0 244Z" fill="#1e4b60"></path><path d="M0 501L333 501L333 501L667 501L667 501L1000 501L1000 501L1333 501L1333 501L1667 501L1667 501L2000 501L2000 501L2333 501L2333 501L2667 501L2667 501L3000 501L3000 501L3000 414L3000 409L2667 409L2667 404L2333 404L2333 424L2000 424L2000 414L1667 414L1667 404L1333 404L1333 419L1000 419L1000 434L667 434L667 399L333 399L333 434L0 434Z" fill="#00665f"></path></svg>
+    <div class="container-fluid" id="work-experience" style="background-color: #00665F;">
       <div class="container">
-        <h1 style="text-align: center; margin-bottom: 0;">Work Experience</h1>
-        <div class="row" style="padding-top: 20px; text-align: center;">
+        <h2 class="text-center" style="margin-bottom: 0;">Work Experience</h2>
+        <div class="row text-center" style="padding-top: 20px;">
           <div class="col-sm-12">
-            <h2>GIPHY</h2>
-            <p>I'm currently a <span style="font-weight: bold; color: #146DD1;">Senior Software Engineer</span> at <a target="_blank" rel="noopener" href="https://giphy.com/">GIPHY</a> in New York City. I joined as a Software Engineer and was promoted in 2023. Back in 2020, GIPHY was <a target="_blank" rel="noopener" href="https://medium.com/@giphy/giphy-to-join-facebook-as-part-of-the-instagram-team-e7ea8d32d7b6">acquried by Facebook</a> and was slated to join the Instagram team. Then, <a target="_blank" rel="noopener" href="https://www.gov.uk/cma-cases/facebook-inc-giphy-inc-merger-inquiry">the CMA said "no"</a>.
+            <h3>GIPHY</h3>
+            <p>I'm currently a <span class="spanner-dark">Senior Software Engineer</span> at <a target="_blank" rel="noopener" href="https://giphy.com/" aria-label="GIPHY website">GIPHY</a> in New York City. I joined as a Software Engineer and was promoted in 2023. Back in 2020, GIPHY was <a target="_blank" rel="noopener" href="https://medium.com/@giphy/giphy-to-join-facebook-as-part-of-the-instagram-team-e7ea8d32d7b6">acquried by Facebook</a> and was slated to join the Instagram team. Then, <a target="_blank" rel="noopener" href="https://www.gov.uk/cma-cases/facebook-inc-giphy-inc-merger-inquiry">the CMA said "no"</a>.
             When I first started at GIPHY, I was helping build out our Ad Products platform using mostly Python and Django. During the Meta acquisition, I worked on some creation tools for our web app using a lot of React and TypeScript. Now I'm working on the Ads Management team again building out more tooling and features for our ad platform.</p>
           </div>
 	      </div>
 	      <div class="row" style="padding-top: 20px;">
           <div class="col-sm-12">
-            <h2>TRUVERIS</h2>
+            <h3>TRUVERIS</h3>
             <p>From 2017-2018 I was a Software Engineer at <a target="_blank" rel="noopener" href="https://www.truveris.com/">Truveris</a>  in New York City. Throughout my time there I learned and wrote a lot of Python while building prescription drug coupon programs, third-party referential data pipelines, and SMS/IVR systems.
           </div>
         </div>
         <div class="row" style="padding-top: 20px;">
           <div class="col-md-4">
-            <h2>BUZZFEED</h2>
-            <p>In the Summer of 2016 I was a Tech Intern for <a target="_blank" rel="noopener" href="https://www.buzzfeed.com/">BuzzFeed</a>. You can read about all the interns and what they worked on <a href="https://www.buzzfeed.com/alexduner/meet-buzzfeeds-2016-summer-interns">here</a>. I also won the 'Most Likely to Appear on Shark Tank' award for my <a target="_blank" rel="noopener" href="https://www.buzzfeed.com/ameliabedelia/hack-week-summer-2016?utm_term=.cm46oqxpe#.helEVRx40">hack week project</a> 'SlackBock'. This internship was a result of my acceptance into the <a target="_blank" rel="noopener" href="http://hackny.org/">hackNY</a> fellowship program.</p>
+            <h3>BUZZFEED</h3>
+            <p>In the Summer of 2016 I was an SDE Intern for <a target="_blank" rel="noopener" href="https://www.buzzfeed.com/">BuzzFeed</a>. You can read about all the interns and what they worked on <a target="_blank" rel="noopener" href="https://www.buzzfeed.com/alexduner/meet-buzzfeeds-2016-summer-interns">here</a>. I also won the 'Most Likely to Appear on Shark Tank' award for my <a target="_blank" rel="noopener" href="https://www.buzzfeed.com/ameliabedelia/hack-week-summer-2016?utm_term=.cm46oqxpe#.helEVRx40">hack week project</a> 'SlackBock'. This internship was a result of my acceptance into the <a target="_blank" rel="noopener" href="http://hackny.org/">hackNY</a> fellowship program.</p>
           </div>
           <div class="col-md-4">
-            <h2>TWILIO</h2>
+            <h3>TWILIO</h3>
             <p>In the Summer of 2015 I interned as a Developer Evangelist for <a target="_blank" rel="noopener" href="https://www.twilio.com/">Twilio</a>. My job was to serve the devevloper community by demoing the company's API and empowering others to use it. I also contributed technical content to the company's blog, which you can read <a target="_blank" rel="noopener" href="https://www.twilio.com/blog/author/chranj">here</a>.</p>
           </div>
           <div class="col-md-4">
-            <h2>DARTMOUTH</h2>
+            <h3>DARTMOUTH</h3>
             <p >In the Summer of 2014 I was a Software Engineering Intern for the <a target="_blank" rel="noopener" href="http://geiselmed.dartmouth.edu/">Giesel School of Medicine</a> at Dartmouth College.
               I worked on the <a target="_blank" rel="noopener" href="https://inspire.dartmouth.edu/main-menu/">Inspire</a> platform. This internship was a result of my participation in Dartmouth's <a target="_blank" rel="noopener" href="http://www.ists.dartmouth.edu/events/sismat/">SISMAT</a> program.</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container-fluid" style="background-color: #146DD1;">
+    <!-- Pingrove Press -->
+    <svg class="transition-svg" viewBox="0 0 3000 500" width="3000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 91L600 91L600 61L1200 61L1200 111L1800 111L1800 81L2400 81L2400 76L3000 76L3000 31L3000 0L3000 0L2400 0L2400 0L1800 0L1800 0L1200 0L1200 0L600 0L600 0L0 0Z" fill="#00665f"></path><path d="M0 111L600 111L600 81L1200 81L1200 206L1800 206L1800 161L2400 161L2400 146L3000 146L3000 106L3000 29L3000 74L2400 74L2400 79L1800 79L1800 109L1200 109L1200 59L600 59L600 89L0 89Z" fill="#208768"></path><path d="M0 381L600 381L600 346L1200 346L1200 296L1800 296L1800 221L2400 221L2400 306L3000 306L3000 401L3000 104L3000 144L2400 144L2400 159L1800 159L1800 204L1200 204L1200 79L600 79L600 109L0 109Z" fill="#53a767"></path><path d="M0 406L600 406L600 416L1200 416L1200 381L1800 381L1800 296L2400 296L2400 426L3000 426L3000 431L3000 399L3000 304L2400 304L2400 219L1800 219L1800 294L1200 294L1200 344L600 344L600 379L0 379Z" fill="#8fc55e"></path><path d="M0 501L600 501L600 501L1200 501L1200 501L1800 501L1800 501L2400 501L2400 501L3000 501L3000 501L3000 429L3000 424L2400 424L2400 294L1800 294L1800 379L1200 379L1200 414L600 414L600 404L0 404Z" fill="#d6df53"></path></svg>
+    <div class="container-fluid" id="pingrove-press" style="background-color: #D6DF53;">
       <div class="container">
         <div class="row vert" style="padding-top: 20px; padding-bottom: 20px;">
-          <div class="col-xs-12 col-md-8 pingrove">
-            <h1>Pingrove Press</h1>
-            <p>In my spare time I run a pin and goods company called Pingrove Press alongside designer <a target="_blank" rel="noopener" href="https://www.matza.design/">Michael Matza</a>. Pingrove Press was started in January of 2017 out of my home in Central NJ. Keep an eye on our store at <a target="_blank" rel="noopener" href="http://pingrove.press">pingrove.press</a> for new and limited releases and follow us on <a target="_blank" rel="noopener" href="https://www.instagram.com/pingrovepress/">Instagram</a>!
+          <div class="col-xs-12 col-md-8">
+            <h2 style="color: #231F20">Pingrove Press</h2>
+            <p class="lead" style="color: #231F20">In my spare time I run a pin and goods company alongside designer <a target="_blank" rel="noopener" href="https://www.matza.design/" aria-label="Personal website of Michael Matza">Michael Matza</a> called Pingrove Press.
+              The company was started in January of 2017 out of my parent's home in Central NJ. Since then I've designed pins and merch for a number of popular bands and world renowned tattoo artists.
+              </p>
+              <p class="lead" style="color: #231F20">
+                Keep an eye on our <a target="_blank" rel="noopener" href="https://pingrovepress.storenvy.com/" aria-label="Pingrove Press Storenvy online storefront">Storenvy store</a> for new and limited releases and follow us on <a target="_blank" rel="noopener" href="https://www.instagram.com/pingrovepress/">Instagram</a>!
+              </p>
           </div>
-          <div class="col-md-4">
-            <a target="_blank" rel="noopener" href="http://pingrove.press"><img style="max-width: 80%;" class="img-fluid hidden-sm-down" src="static/images/PINGROVEPRESSFINAL.png"></a>
+          <div class="col-md-4 d-none d-md-block">
+            <a target="_blank" rel="noopener" href="https://www.storenvy.com/stores/973546-pingrove-press" aria-label="Pingrove Press Storenvy online storefront"><img style="max-width: 80%;" class="img-fluid hidden-sm-down" src="static/images/pingrove.png" alt="Pingrove Press circle logo"></a>
          </div>
         </div>
       </div>
     </div>
-
-    <div class="container-fluid" style="background-color: #04D294; color: #FCFAFC;">
+    <!-- Footer Navbar -->
+    <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <u class="list-header">Projects</u>
-            <ul class="list-unstyled">
-              <li><a target="_blank" rel="noopener" href="https://github.com/brodan">GitHub</a></li>
-              <li><a target="_blank" rel="noopener" href="https://brodan.biz/blog/">Blog</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.twilio.com/blog/author/chranj">Twilio Blog</a></li>
-              <li><a target="_blank" rel="noopener" href="https://dev.to/brodan">DEV</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <u class="list-header">Socials</u>
-            <ul class="list-unstyled">
-              <li><a target="_blank" rel="noopener" href="https://twitter.com/Brodan_">Twitter</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/christopherhranj">LinkedIn</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.twitch.tv/brodan_">Twitch</a></li>
-              <li><a target="_blank" rel="noopener" href="https://untappd.com/user/brodan_">Untappd</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.polywork.com/brodan">Polywork</a></li>
-	            <li><a href="https://www.discogs.com/user/brodan">Discogs</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <u class="list-header">Music</u>
-            <ul class="list-unstyled">
-	            <li><a target="_blank" rel="noopener" href="https://linktr.ee/feasterband">Feaster</a></li>
-              <li><a target="_blank" rel="noopener" href="https://www.youtube.com/user/zuuku/">YouTube</a></li>
-              <li><a target="_blank" rel="noopener" href="http://will-smith.bandcamp.com/">The Fresh Men</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <u class="list-header">Gaming</u>
-            <ul class="list-unstyled">
-	            <li><a target="_blank" rel="noopener" href="https://halotracker.com/halo-infinite/profile/xbl/craaazy%20taco/overview?experience=overall">Halo: Infinite</a></li>
-	            <li><a target="_blank" rel="noopener" href="https://runehs.com/OSRS-account-brodan-sucks">RuneScape</a></li>
-              <li><a target="_blank" rel="noopener" href="http://halotracker.com/h5/player/craaazy-taco">Halo 5: Guardians</a></li>
-              <li><a target="_blank" rel="noopener" href="https://halo.bungie.net/stats/reach/default.aspx?player=craaazy%20taco">Halo: Reach</a></li>
-              <li><a target="_blank" rel="noopener" href="http://destinytracker.com/destiny/overview/xbox/craaazy%20taco">Destiny</a></li>
-              <li><a target="_blank" rel="noopener" href="http://masteroverwatch.com/profile/pc/us/Brodan-11622">Overwatch</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-        <footer>
-          <div class="row vert">
-            <div class="col-sm-10">
-              <p style="margin: 0">
-                &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> &middot; Website created by Christopher "Brodan" Hranj
+          <!-- Large Footer -->
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="row vert">
+              <img src="static/images/logo2.png" class="img-fluid" style="width: 200px;" alt="Small pixelated Brodan logo">
+            </div>
+            <div class="row text-center">
+              <p style="margin-top: 1rem; font-size: 75%;">
+                &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> &middot; Christopher "Brodan" Hranj
                 <br>
-                Thank you <a href="https://jnnngs.com/">Ian Jennings</a> for contributions &middot;
-                Color scheme created using <a target="_blank" rel="noopener" href="http://paletton.com/#uid=7380u0kvoKnjqOPpfM7ITzqIbpk">Paletton</a> &middot;
-                Pixel avatar created by <a target="_blank" rel="noopener" href="https://twitter.com/kevinwhinnery">@kevinwhinnery</a> &middot;
-                Pixel logo created by <a target="_blank" rel="noopener" href="https://www.instagram.com/dromgp/">@dromgp</a> &middot;
-                GitHub Corner created by <a target="_blank" rel="noopener" href="http://tholman.com">Tim Holman</a>
+                Contributions by <a target="_blank" rel="noopener" href="https://jnnngs.com/" aria-label="Personal website of Ian Jennings">Ian Jennings</a>
+                <br>
+                Pixel logo by <a target="_blank" rel="noopener" href="https://www.instagram.com/dromgp/" aria-label="Instagram of Drip">@dromgp</a>
+                <br>
+                GitHub Corner by <a target="_blank" rel="noopener" href="http://tholman.com" aria-label="Personal website of Tim Holman">Tim Holman</a>
+                <br>
+                SVGs created with <a target="_blank" rel="noopener" href="https://app.haikei.app/" aria-label="Haikei app">Haikei</a>
+                <br>
               </p>
             </div>
-            <div class="col-sm-2">
-              <div class="vert">
-                <a target="_blank" rel="noopener" href="https://webring.hackny.org">
-                  <img src="https://webring.hackny.org/logo.png" style="filter: grayscale(100%)" height="40" />
+            <hr>
+            <div class="row vert text-center">
+              <div class="col-lg-3">
+                <a target="_blank" rel="noopener" aria-label="GitHub" href="https://github.com/brodan">
+                  <img src="static/images/github.png" height="40" alt="GitHub icon" />
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a target="_blank" rel="noopener" aria-label="LinkedIn" href="https://www.linkedin.com/in/christopherhranj">
+                  <img src="static/images/linkedin.png" height="40" alt="LinkedIn icon" />
+                </a>
+              </div>
+              <div class="col-lg-3">
+                <a target="_blank" rel="noopener" aria-label="The HackNY Webring" href="https://webring.hackny.org">
+                  <img src="https://webring.hackny.org/logo.png" height="40" alt="HackNY icon" />
                 </a>
               </div>
             </div>
           </div>
-        </footer>
+          <div class="col-lg-9 col-md-12 px-4">
+            <div class="row">
+              <div class="col">
+                <u class="list-header">Site</u>
+                <ul class="footer-list">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/now">Now</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <u class="list-header">Projects</u>
+                <ul class="footer-list">
+                  <li><a target="_blank" rel="noopener" href="https://github.com/brodan" aria-label="Brodan's GitHub Profile">GitHub</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://brodan.biz/blog/" aria-label="Brodan's Personal Blog">Blog</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://www.twilio.com/blog/author/chranj" aria-label="Brodan's Twilio Blog">Twilio Blog</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://codepen.io/brodan" aria-label="Brodan's CodePen">CodePen</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://dev.to/brodan" aria-label="Brodan's DEV.to Profile">DEV</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <u class="list-header">Socials</u>
+                <ul class="footer-list">
+                  <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/christopherhranj">LinkedIn</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://twitter.com/Brodan_">Twitter</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://www.twitch.tv/brodan_">Twitch</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://www.polywork.com/brodan">Polywork</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://www.discogs.com/user/brodan">Discogs</a></li>
+                  <li><a target="_blank" rel="noopener" href=" https://www.goodreads.com/brodan">Goodreads</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <u class="list-header">Music</u>
+                <ul class="footer-list">
+                  <li><a target="_blank" rel="noopener" href="https://linktr.ee/feasterband" aria-label="Feaster Bandcamp">Feaster</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://www.youtube.com/user/zuuku/" aria-label="Brodan's YouTube channel">YouTube</a></li>
+                  <li><a target="_blank" rel="noopener" href="http://will-smith.bandcamp.com/" aria-label="The Fresh Men Bandcamp">The Fresh Men</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <u class="list-header">Gaming</u>
+                <ul class="footer-list">
+                  <li><a target="_blank" rel="noopener" href="https://halotracker.com/halo-infinite/profile/xbl/craaazy%20taco/overview?experience=overall" aria-label="Halo: Infinite stats">Halo: Infinite</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://runehs.com/OSRS-account-brodan-sucks" aria-label="RuneScape stats">RuneScape</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://sr152.app/spartan/craaazy%20taco" aria-label="Halo 5 stats">Halo 5: Guardians</a></li>
+                  <li><a target="_blank" rel="noopener" href="https://halo.bungie.net/stats/reach/default.aspx?player=craaazy%20taco" aria-label="Halo: Reach stats">Halo: Reach</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Small Footer -->
+        <div class="container d-lg-none">
+          <hr>
+            <div class="row vert">
+              <img src="static/images/logo2.png" class="img-fluid" style="width: 200px;" alt="Small pixelated Brodan logo">
+            </div>
+            <div class="row text-center">
+              <p style="margin-top: 1rem; font-size: 75%;">
+                &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> &middot; Christopher "Brodan" Hranj
+                <br>
+                Contributions by <a target="_blank" rel="noopener" href="https://jnnngs.com/" aria-label="Personal website of Ian Jennings">Ian Jennings</a>
+                <br>
+                Pixel logo by <a target="_blank" rel="noopener" href="https://www.instagram.com/dromgp/">@dromgp</a>
+                <br>
+                GitHub Corner by <a target="_blank" rel="noopener" href="http://tholman.com">Tim Holman</a>
+                <br>
+                SVGs created with <a target="_blank" rel="noopener" href="https://app.haikei.app/">Haikei</a>
+                <br>
+              </p>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4 col-3"></div>
+              <div class="col">
+                <a target="_blank" rel="noopener" aria-label="GitHub" href="https://github.com/brodan">
+                  <img src="static/images/github.png" height="40" alt="GitHub icon" />
+                </a>
+              </div>
+              <div class="col">
+                <a target="_blank" rel="noopener" aria-label="LinkedIn" href="https://www.linkedin.com/in/christopherhranj">
+                  <img src="static/images/linkedin.png" height="40" alt="LinkedIn icon" />
+                </a>
+              </div>
+              <div class="col">
+                <a target="_blank" rel="noopener" aria-label="The HackNY Webring" href="https://webring.hackny.org">
+                  <img src="https://webring.hackny.org/logo.png" height="40" alt="HackNY icon" />
+                </a>
+              </div>
+              <div class="col-md-4 col-3"></div>
+            </div>
 
+
+        </div>
       </div>
-    </div>
+    </footer>
 
-    <a target="_blank" rel="noopener" href="https://github.com/brodan/brodan.biz" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#146DD1; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <a target="_blank" rel="noopener" href="https://github.com/brodan/brodan.biz" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill: #DB151F; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   </body>
 </html>
