@@ -10,4 +10,5 @@ The colors for this site are based on the [Baja Blast](https://coolors.co/ffffff
 - [x] Launch V2 restyle
 - [ ] Add a [Now](https://nownownow.com/about) page.
 - [ ] Update 404 page.
+- [ ] Convert to react for re-usable components.
 - [ ] Implement [Konami Code](https://github.com/MachinisteWeb/konami-code-js) lib to unlock hidden website section.
