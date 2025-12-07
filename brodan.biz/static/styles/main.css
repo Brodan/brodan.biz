@@ -1,0 +1,115 @@
+body {
+  background-color: #231f20;
+}
+footer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #231f20;
+}
+footer a {
+  color: #D6DF53;
+}
+footer a:visited {
+  color: #86C9C3;
+}
+footer a:hover {
+  color: #FFFFFF;
+}
+#work-experience a,
+#now a {
+  color: #D6DF53;
+}
+#work-experience a:hover,
+#now a:hover {
+  color: #FFFFFF;
+}
+#pingrove-press a {
+  color: #231f20;
+}
+#pingrove-press a:hover {
+  color: #00665F;
+}
+.jumbotron {
+  border-radius: 0;
+  background-color: #86C9C3;
+  margin-bottom: 0;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+#about-me-buttons {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.container-fluid {
+  padding: 3rem 0rem;
+}
+h1, h2, h3 {
+  color: #FFFFFF;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-size: 400%;
+}
+hr {
+  color: #FFFFFF;
+  opacity: 100%;
+}
+p {
+  color: #FFFFFF;
+}
+a {
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #00665F;
+  border-color: #00665F;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.btn-primary:hover {
+  background-color: #DB151F;
+  border-color: #DB151F;
+  color: #FFFFFF;
+}
+.btn-primary:first-child:active {
+  background-color: #D6DF53;
+  border-color: #D6DF53;
+  color: #231f20;
+}
+.btn-primary:focus {
+  background-color: #DB151F;
+  border-color: #DB151F;
+  box-shadow: none;
+}
+.list-header {
+  font-size: 150%;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-list {
+  white-space: nowrap;
+  padding-left: 0;
+  list-style-type: none;
+}
+.spanner-dark {
+  color: #D6DF53;
+  font-weight: bold;
+}
+.vert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transition-svg {
+  vertical-align: top;
+  width: 100%;
+}
+#tcnj-link {
+  color: #D6DF53;
+}
+#tcnj-link:hover {
+  color: #FFFFFF;
+}

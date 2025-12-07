@@ -1,2 +1,4 @@
 .DS_Store
 brodan.biz/.well-known/
+brodan.biz/dist/
+node_modules/
