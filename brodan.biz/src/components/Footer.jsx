@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-3 d-none d-lg-block">
               <div className="row vert">
-                <img src="static/images/logo2.png" className="img-fluid" style={{ width: '200px' }} alt="Small pixelated Brodan logo" />
+                <img src="images/logo2.png" className="img-fluid" style={{ width: '200px' }} alt="Small pixelated Brodan logo" />
               </div>
               <div className="row text-center">
                 <p style={{ marginTop: '1rem', fontSize: '75%' }}>
@@ -30,12 +30,12 @@ export default function Footer() {
               <div className="row vert text-center">
                 <div className="col-lg-3">
                   <a target="_blank" rel="noopener" aria-label="GitHub" href="https://github.com/brodan">
-                    <img src="static/images/github.png" height={40} alt="GitHub icon" />
+                    <img src="images/github.png" height={40} alt="GitHub icon" />
                   </a>
                 </div>
                 <div className="col-lg-3">
                   <a target="_blank" rel="noopener" aria-label="LinkedIn" href="https://www.linkedin.com/in/christopherhranj">
-                    <img src="static/images/linkedin.png" height={40} alt="LinkedIn icon" />
+                    <img src="images/linkedin.png" height={40} alt="LinkedIn icon" />
                   </a>
                 </div>
                 <div className="col-lg-3">
@@ -103,7 +103,7 @@ export default function Footer() {
       <div className="container d-lg-none">
         <hr />
         <div className="row vert">
-          <img src="static/images/logo2.png" className="img-fluid" style={{ width: '200px' }} alt="Small pixelated Brodan logo" />
+          <img src="images/logo2.png" className="img-fluid" style={{ width: '200px' }} alt="Small pixelated Brodan logo" />
         </div>
         <div className="row text-center">
           <p style={{ marginTop: '1rem', fontSize: '75%' }}>
@@ -123,12 +123,12 @@ export default function Footer() {
           <div className="col-md-4 col-3 d-none d-sm-block"></div>
           <div className="col">
             <a target="_blank" rel="noopener" aria-label="GitHub" href="https://github.com/brodan">
-              <img src="static/images/github.png" height={40} alt="GitHub icon" />
+              <img src="images/github.png" height={40} alt="GitHub icon" />
             </a>
           </div>
           <div className="col">
             <a target="_blank" rel="noopener" aria-label="LinkedIn" href="https://www.linkedin.com/in/christopherhranj">
-              <img src="static/images/linkedin.png" height={40} alt="LinkedIn icon" />
+              <img src="images/linkedin.png" height={40} alt="LinkedIn icon" />
             </a>
           </div>
           <div className="col">
