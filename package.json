@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
     "build": "vite build",
-    "start": "vite"
+    "start": "vite",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.1.1",
+    "husky": "^9.1.7",
     "vite-plugin-static-copy": "^3.1.4"
   }
 }
