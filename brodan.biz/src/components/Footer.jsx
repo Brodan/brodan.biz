@@ -79,7 +79,7 @@ export default function Footer() {
                 <div className="col">
                   <u className="list-header">Music</u>
                   <ul className="footer-list">
-                    <li><a target="_blank" rel="noopener" href="https://linktr.ee/feasterband" aria-label="Feaster Bandcamp">Feaster</a></li>
+                    <li><a target="_blank" rel="noopener" href="https://feaster.fun/" aria-label="Feaster Bandcamp">Feaster</a></li>
                     <li><a target="_blank" rel="noopener" href="https://dionaea.bandcamp.com/" aria-label="Dionaea Bandcamp">Dionaea</a></li>
                     <li><a target="_blank" rel="noopener" href="http://will-smith.bandcamp.com/" aria-label="The Fresh Men Bandcamp">The Fresh Men</a></li>
                   </ul>
