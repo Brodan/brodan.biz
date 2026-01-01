@@ -81,6 +81,7 @@ export default function Footer() {
                   <ul className="footer-list">
                     <li><a target="_blank" rel="noopener" href="https://feaster.fun/" aria-label="Feaster Bandcamp">Feaster</a></li>
                     <li><a target="_blank" rel="noopener" href="https://dionaea.bandcamp.com/" aria-label="Dionaea Bandcamp">Dionaea</a></li>
+                    <li><a target="_blank" rel="noopener" href="https://golfboys.bandcamp.com/album/live-from-the-pro-shop-back-2-da-shack" aria-label="Golf Boys Bandcamp">Golf Boys</a></li>
                     <li><a target="_blank" rel="noopener" href="http://will-smith.bandcamp.com/" aria-label="The Fresh Men Bandcamp">The Fresh Men</a></li>
                   </ul>
                 </div>
