@@ -58,6 +58,7 @@ export default function Footer() {
                   <u className="list-header">Projects</u>
                   <ul className="footer-list">
                     <li><a target="_blank" rel="noopener" href="https://github.com/brodan" aria-label="Brodan's GitHub Profile">GitHub</a></li>
+                    <li><a target="_blank" rel="noopener" href="https://mood.tattoo" aria-label="Tattoo Mood">Tattoo Mood</a></li>
                     <li><a target="_blank" rel="noopener" href="https://brodan.biz/blog/" aria-label="Brodan's Personal Blog">Blog</a></li>
                     <li><a target="_blank" rel="noopener" href="https://www.twilio.com/blog/author/chranj" aria-label="Brodan's Twilio Blog">Twilio Blog</a></li>
                     <li><a target="_blank" rel="noopener" href="https://codepen.io/brodan" aria-label="Brodan's CodePen">CodePen</a></li>
@@ -92,7 +93,6 @@ export default function Footer() {
                     <li><a target="_blank" rel="noopener" href="https://ptcgp-tracker.com/collection/159027" aria-label="Pokémon TCG Pocket collection">Pokémon TCG Pocket</a></li>
                     <li><a target="_blank" rel="noopener" href="https://wiseoldman.net/players/brodan%20sucks" aria-label="RuneScape stats">RuneScape</a></li>
                     <li><a target="_blank" rel="noopener" href="https://sr152.app/spartan/craaazy%20taco" aria-label="Halo 5 stats">Halo 5: Guardians</a></li>
-                    <li><a target="_blank" rel="noopener" href="https://halo.bungie.net/stats/reach/default.aspx?player=craaazy%20taco" aria-label="Halo: Reach stats">Halo: Reach</a></li>
                   </ul>
                 </div>
               </div>
