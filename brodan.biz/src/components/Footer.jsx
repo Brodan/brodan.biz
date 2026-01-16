@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
       </footer>
       {/* Small Footer */}
-      <div className="container d-lg-none">
+      <div className="container d-lg-none mb-5">
         <hr />
         <div className="row vert">
           <img src="images/logo2.png" className="img-fluid" style={{ width: '200px' }} alt="Small pixelated Brodan logo" />
